@@ -36,38 +36,39 @@ This is a disposable repo for a meeting about how git/GitHub works
           - (once) checkout the repo on GitHub
           - (best practice) create a local branch to track your changes
           
-              git checkout -b my-changes
+                git checkout -b my-changes
               
           - make your changes to hello.js
           - add your changes to the "index", which is a list of files your want to commit
           
-              git add hello.js
+                git add hello.js
               
           - commit your changes to the 'my-changes' branch with a message
           
-              git commit -m "Removed exclamation point"
+                git commit -m "Removed exclamation point"
               
           - change back to the master branch
           
-              git checkout -b master
+                git checkout -b master
               
           - update master in case there are any remote changes
           
-              git pull origin master
+                git pull origin master
               
           - merge your changes into master
           
-              git merge my-changes
+                git merge my-changes
               
           - push your changes to GitHub
           
-              git push origin master
+                git push origin master
               
         - "forking" the repo and then doing a "pull request" - this lets the repo owners accept/reject changes to the repo.  GitHub has added their own web UI for this.
           - Use the GitHub UI and click the "fork" button
           - Checkout the fork locally
           - Do steps above to change the code and push it.  You can skip the pull from master to check for changes if you are the only user of the fork.
           - Use the GitHub UI to create a pull request
+          - The "forked" repos owners will get a pull request notification.  They can then review the changes and either accept them, reject them or ask for additional changes.
           
     - Other GitHub features
         -  issues
