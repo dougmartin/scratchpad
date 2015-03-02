@@ -23,6 +23,7 @@ This is a disposable repo for a meeting about how git/GitHub works
         - "commit" which contains a pointer to the top tree, the author, committer and comment like this:
         
                 tree d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+                parent d8329fc1cc938780ffdd9f94e0d364e0ea74f578
                 author Scott Chacon <schacon@gmail.com> 1243040974 -0700
                 committer Scott Chacon <schacon@gmail.com> 1243040974 -0700
 
