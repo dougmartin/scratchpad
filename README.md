@@ -10,13 +10,17 @@ This is a disposable repo for a meeting about how git/GitHub works
     - Git is really a content-addressable filesystem.  Version control is just one use of it.
     - Git is a key/value store where the key is a 20-byte [SHA-1 Hash](http://en.wikipedia.org/wiki/SHA-1) and the value is one of three things
         - "blob" which is a plain file like a source code file or an image.  Lets say a file named 'hello.js' contains this:
+        
                 alert('hello, world!')
             The blob's key would be the SHA-1 hash of that text which is 7eb912663f26be9296e7a748ce28973e1524045f
         - "tree" which contains lists of blobs or trees and looks like this
+        
                 100644 blob a906cb2a4a904a152e80877d4088654daad0c859      README
                 100644 blob 7eb912663f26be9296e7a748ce28973e1524045f      hello.js
                 040000 tree 99f1a6d12cb4b6f19c8655fca46c3ecf317074e0      lib
+
         - "commit" which contains a pointer to the top tree, the author, committer and comment like this:
+        
                 tree d8329fc1cc938780ffdd9f94e0d364e0ea74f579
                 author Scott Chacon <schacon@gmail.com> 1243040974 -0700
                 committer Scott Chacon <schacon@gmail.com> 1243040974 -0700
